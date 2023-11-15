@@ -2,103 +2,103 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  .slider {
+}
+
+.slider {
     position: relative;
     width: 100dvw;
     height: 100dvh;
-  }
-  
-  .pageOne {
+}
+
+.pageOne {
     width: 100vw;
     height: 100vh;
     display: flex;
     background: radial-gradient(at center, #ffffff, #c6ecec);
     overflow: hidden;
-  }
-  
-  .pageTwo {
+}
+
+.pageTwo {
     width: 100dvw;
     background: #022e3f;
-  }
-  
-  .page {
+}
+
+.page {
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     transition: opacity .3s ease-in;
-  }
-  
-  .active {
+}
+
+.active {
     opacity: 1;
-  }
-  
-  .snowflakes {
+}
+
+.snowflakes {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
-  }
-  
-  .snowflake {
+}
+
+.snowflake {
     position: absolute;
     width: 20px;
     height: 20px;
     animation: snowflakes-fall linear infinite;
-  }
-  
-  @keyframes snowflakes-fall {
+}
+
+@keyframes snowflakes-fall {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  
+
     100% {
-      transform: translateY(100dvh);
+        transform: translateY(100dvh);
     }
-  }
-  
-  .leftDiv {
+}
+
+.leftDiv {
     width: 55dvw;
     height: 100dvh;
-  }
-  
-  .leftDiv .necklaceDiv {
+}
+
+.leftDiv .necklaceDiv {
     width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     filter: drop-shadow(50px);
-  
-  }
-  
-  .leftDiv .navbar-brand {
+
+}
+
+.leftDiv .navbar-brand {
     font-family: "Allura", cursive;
     font-size: 20px;
     font-weight: 500;
     background-color: #022e3f;
     color: #dfdede;
-  }
-  
-  .leftDiv img {
+}
+
+.leftDiv img {
     width: 240px;
     height: auto;
     filter: blur(1px);
-  }
-  
-  .leftDiv img:nth-child(1) {
+}
+
+.leftDiv img:nth-child(1) {
     margin-left: 200px;
-  }
-  
-  .leftDiv img:nth-child(2) {
+}
+
+.leftDiv img:nth-child(2) {
     margin-left: 245px;
     width: 290px;
-  }
-  
-  .circleLogoDiv {
+}
+
+.circleLogoDiv {
     width: 100px;
     height: 100px;
     background: #090C2C;
@@ -110,28 +110,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .circleLogoDiv .logo {
+}
+
+.circleLogoDiv .logo {
     font-size: 30px;
     color: #ffffff;
     font-style: italic;
     font-family: "Allura", cursive;
-  }
-  
-  .leftDiv,
-  .rightDiv {
+}
+
+.leftDiv,
+.rightDiv {
     position: relative;
     z-index: 2;
-  }
-  
-  .rightDiv {
+}
+
+.rightDiv {
     width: 45dvw;
     height: 100dvh;
     display: flex;
-  }
-  
-  span:nth-child(even) {
+}
+
+span:nth-child(even) {
     width: 15px;
     height: 100dvh;
     background: rgba(244, 255, 255, 0.507);
@@ -141,9 +141,9 @@
     z-index: 3;
     margin-right: 4px;
     opacity: 0.5;
-  }
-  
-  span:nth-child(odd) {
+}
+
+span:nth-child(odd) {
     width: 15px;
     height: 100dvh;
     background: rgba(216, 231, 231, 0.507);
@@ -152,9 +152,9 @@
     transform: matrix(1, -1, 0, 1, 0, 0);
     z-index: 3;
     opacity: 0.5;
-  }
-  
-  .greeting {
+}
+
+.greeting {
     width: 45dvw;
     height: 100dvh;
     position: absolute;
@@ -162,18 +162,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .greetingTitle {
+}
+
+.greetingTitle {
     font-weight: 200;
     font-size: 60px;
     text-transform: capitalize;
     font-style: italic;
     font-family: "Allura", cursive;
     color: #31373ad3;
-  }
-  
-  .exploreButton {
+}
+
+.exploreButton {
     position: absolute;
     z-index: 4;
     top: 360px;
@@ -193,188 +193,198 @@
     letter-spacing: 4px;
     font-family: "Allura", cursive;
     font-style: italic;
-  }
-  
-  .exploreButton i {
+}
+
+.exploreButton i {
     animation: transform .8s linear infinite;
-  }
-  
-  @keyframes transform {
+}
+
+@keyframes transform {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  
+
     100% {
-      transform: translateX(5px);
+        transform: translateX(5px);
     }
-  }
-  
-  .exploreButton:hover {
+}
+
+.exploreButton:hover {
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     border: 1px solid white;
     letter-spacing: 1px;
-  }
-  
-  .exploreButton:active {
+}
+
+.exploreButton:active {
     box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
-  }
-  
-  @media screen and (max-width:885px) {
+}
+
+@media screen and (max-width:885px) {
     .greetingTitle {
-      font-size: 50px;
+        font-size: 50px;
     }
-  
-  }
-  
-  @media screen and (max-width:750px) {
-    .greetingTitle {
-      font-size: 40px;
-    }
-  
-    .exploreButton {
-      font-size: 15px;
-      width: 150px;
-      height: 25px;
-    }
-  }
-  
-  @media screen and (max-width:780px) {
+
+}
+
+@media screen and (max-width:780px) {
     .leftDiv .necklaceDiv {
-      margin-left: -200px;
+        margin-left: -200px;
     }
-  
+
     .circleLogoDiv {
-      top: 260px;
-      left: 150px;
+        top: 260px;
+        left: 150px;
     }
-  }
-  
-  @media screen and (max-width:550px) {
+}
+
+@media screen and (max-width:750px) {
+    .greetingTitle {
+        font-size: 40px;
+    }
+
+    .exploreButton {
+        font-size: 15px;
+        width: 150px;
+        height: 25px;
+    }
+
+    
+}
+
+@media screen and (max-width:550px) {
     .pageOne {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
-  
+
     .leftDiv,
     .rightDiv {
-      width: 100dvw;
-      height: 50dvh;
+        width: 100dvw;
+        height: 50dvh;
     }
-  
+
     span:nth-child(odd) {
-      display: none;
+        display: none;
     }
-  
+
     span:nth-child(even) {
-      display: none;
+        display: none;
     }
-  
+
     .rightDiv {
-      justify-content: center;
+        justify-content: center;
     }
-  
+
     .greeting {
-      width: 100dvw;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: start;
-      margin-top: 80px;
+        width: 100dvw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: 80px;
     }
-  
+
     .exploreButton {
-      top: 100px;
+        top: 100px;
     }
-  
+
     .leftDiv img:nth-child(1) {
-      display: none;
+        display: none;
     }
-  
+
     .leftDiv .necklaceDiv {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .circleLogoDiv {
-  
-      top: 20px;
-      left: 20px;
-      width: 50px;
-      height: 50px;
+
+        top: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
     }
-  
+
     .circleLogoDiv .logo {
-  
-      font-size: 20px;
+
+        font-size: 20px;
     }
-  }
-  @media screen and (min-height:640px) {
-   
+}
+
+@media screen and (min-height:650px) {
+
     .leftDiv img {
-      width: 270px;
-      height: auto;
-      filter: blur(1px);
+        width: 270px;
+        height: auto;
+        filter: blur(1px);
     }
-    
+
     .leftDiv img:nth-child(1) {
-      margin-left: 230px;
+        margin-left: 230px;
     }
-    
+
     .leftDiv img:nth-child(2) {
-      margin-left: 287px;
-      width: 320px;
+        margin-left: 287px;
+        width: 320px;
     }
+
     .exploreButton {
-      top: 390px;
+        top: 390px;
     }
-    .circleLogoDiv{
-      top: 270px;
-      left: 425px;
-      }
-  }
-  @media screen and (min-height:714px) {
-   .leftDiv img {
-      width: 300px;
-      height: auto;
-      filter: blur(1px);
+
+    .circleLogoDiv {
+        top: 270px;
+        left: 425px;
     }
-    
-    .leftDiv img:nth-child(1) {
-      margin-left: 260px;
-    }
-    
-    .leftDiv img:nth-child(2) {
-      margin-left: 323px;
-      width: 350px;
-    }
-    .exploreButton {
-      top: 450px;
-    }
-    .circleLogoDiv{
-      top: 340px;
-      left: 480px;
-      }
-  }
-  
-  @media screen and (min-height:852px) {
+}
+
+@media screen and (min-height:714px) {
     .leftDiv img {
-      width: 340px;
-      height: auto;
-      filter: blur(1px);
+        width: 300px;
+        height: auto;
+        filter: blur(1px);
     }
-    
+
     .leftDiv img:nth-child(1) {
-      margin-left: 300px;
+        margin-left: 260px;
     }
-    
+
     .leftDiv img:nth-child(2) {
-      margin-left: 375px;
-      width: 390px;
+        margin-left: 323px;
+        width: 350px;
     }
+
     .exploreButton {
-      top: 500px;
+        top: 450px;
     }
-    .circleLogoDiv{
-    top: 365px;
-    left: 525px;
+
+    .circleLogoDiv {
+        top: 340px;
+        left: 480px;
     }
-  }
+}
+
+@media screen and (min-height:852px) {
+    .leftDiv img {
+        width: 340px;
+        height: auto;
+        filter: blur(1px);
+    }
+
+    .leftDiv img:nth-child(1) {
+        margin-left: 300px;
+    }
+
+    .leftDiv img:nth-child(2) {
+        margin-left: 375px;
+        width: 390px;
+    }
+
+    .exploreButton {
+        top: 500px;
+    }
+
+    .circleLogoDiv {
+        top: 365px;
+        left: 525px;
+    }
+}

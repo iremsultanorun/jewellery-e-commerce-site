@@ -6,17 +6,17 @@ let discoverButton = document.querySelector('.exploreButton');
 document.addEventListener("DOMContentLoaded", function () {
 
 
-  for (let i = 0; i < 40; i++) {
-    const snowflake = document.createElement("img");
-    snowflake.className = "snowflake";
-    snowflake.setAttribute("src", "snowflake.png");
+//   for (let i = 0; i < 40; i++) {
+//     const snowflake = document.createElement("img");
+//     snowflake.className = "snowflake";
+//     snowflake.setAttribute("src", "snowflake.png");
 
 
-    snowflake.style.left = Math.random() * 100 + "vw";
-    snowflake.style.animationDuration = Math.random() * 3 + 2 + "s";
+//     snowflake.style.left = Math.random() * 100 + "vw";
+//     snowflake.style.animationDuration = Math.random() * 3 + 2 + "s";
 
-    pageOne.appendChild(snowflake);
-  }
+//     pageOne.appendChild(snowflake);
+//   }
 
 });
 let rightDiv = document.querySelector('.rightDiv')
