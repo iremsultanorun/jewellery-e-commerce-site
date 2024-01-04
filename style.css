@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
+
+}
+
+:root {
+    --darkBlue: #0C0F38;
+}
+
+i {
+    cursor: pointer;
 }
 
 .slider {
@@ -10,31 +20,31 @@
     height: 100dvh;
 }
 
-.pageOne {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    background: radial-gradient(at center, #ffffff, #c6ecec);
-    overflow: hidden;
-}
-
-.pageTwo {
-    width: 100dvw;
-    background: #022e3f;
-}
-
+/*! Main Page & E-commerce Page */
 .page {
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
-    transition: opacity .3s ease-in;
+    transition: opacity .5s ease-in;
 }
 
 .active {
     opacity: 1;
 }
 
+
+
+/*! Main Page  */
+.pageOne {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    background: radial-gradient(at center, #ffffff, #c6ecec);
+    overflow: hidden !important;
+}
+
+/*? Snowflakes animation */
 .snowflakes {
     position: absolute;
     top: 0;
@@ -61,12 +71,22 @@
     }
 }
 
+/** Left Box & Right Box */
+.leftDiv,
+.rightDiv {
+    position: relative;
+    z-index: 2;
+}
+
+
+/** Left Box */
 .leftDiv {
     width: 55dvw;
     height: 100dvh;
 }
 
-.leftDiv .necklaceDiv {
+/* Ribbons Image Box  */
+.leftDiv .RibbonsDiv {
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -75,15 +95,7 @@
 
 }
 
-.leftDiv .navbar-brand {
-    font-family: "Allura", cursive;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: #022e3f;
-    color: #dfdede;
-}
-
-.leftDiv img {
+.leftDiv .RibbonsDiv img {
     width: 240px;
     height: auto;
     filter: blur(1px);
@@ -95,9 +107,10 @@
 
 .leftDiv img:nth-child(2) {
     margin-left: 245px;
-    width: 290px;
+    width: 320px;
 }
 
+/* Logo  */
 .circleLogoDiv {
     width: 100px;
     height: 100px;
@@ -119,18 +132,14 @@
     font-family: "Allura", cursive;
 }
 
-.leftDiv,
-.rightDiv {
-    position: relative;
-    z-index: 2;
-}
-
+/* * Right Box */
 .rightDiv {
     width: 45dvw;
     height: 100dvh;
     display: flex;
 }
 
+/* ? Spans */
 span:nth-child(even) {
     width: 15px;
     height: 100dvh;
@@ -154,6 +163,7 @@ span:nth-child(odd) {
     opacity: 0.5;
 }
 
+/* greeting box */
 .greeting {
     width: 45dvw;
     height: 100dvh;
@@ -219,6 +229,8 @@ span:nth-child(odd) {
     box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
 
+/****** Responsive Design for main page ******/
+
 @media screen and (max-width:885px) {
     .greetingTitle {
         font-size: 50px;
@@ -233,7 +245,7 @@ span:nth-child(odd) {
 
     .circleLogoDiv {
         top: 260px;
-        left: 150px;
+        left: 380px;
     }
 }
 
@@ -248,7 +260,7 @@ span:nth-child(odd) {
         height: 25px;
     }
 
-    
+
 }
 
 @media screen and (max-width:550px) {
@@ -310,32 +322,32 @@ span:nth-child(odd) {
     }
 }
 
-@media screen and (min-height:650px) {
-
+@media screen and (min-height:852px) {
     .leftDiv img {
-        width: 270px;
+        width: 340px;
         height: auto;
         filter: blur(1px);
     }
 
     .leftDiv img:nth-child(1) {
-        margin-left: 230px;
+        margin-left: 300px;
     }
 
     .leftDiv img:nth-child(2) {
-        margin-left: 287px;
-        width: 320px;
+        margin-left: 375px;
+        width: 390px;
     }
 
     .exploreButton {
-        top: 390px;
+        top: 500px;
     }
 
     .circleLogoDiv {
-        top: 270px;
-        left: 425px;
+        top: 365px;
+        left: 525px;
     }
 }
+
 
 @media screen and (min-height:714px) {
     .leftDiv img {
@@ -363,28 +375,1151 @@ span:nth-child(odd) {
     }
 }
 
-@media screen and (min-height:852px) {
+@media screen and (min-height:650px) {
+
     .leftDiv img {
-        width: 340px;
+        width: 270px;
         height: auto;
         filter: blur(1px);
     }
 
     .leftDiv img:nth-child(1) {
-        margin-left: 300px;
+        margin-left: 230px;
     }
 
     .leftDiv img:nth-child(2) {
-        margin-left: 375px;
-        width: 390px;
+        margin-left: 287px;
+        width: 320px;
     }
 
     .exploreButton {
-        top: 500px;
+        top: 390px;
     }
 
     .circleLogoDiv {
-        top: 365px;
-        left: 525px;
+        top: 270px;
+        left: 425px;
     }
+}
+
+
+
+/*! E-commerce Page */
+.pageTwo {
+    width: 100%;
+    background: white;
+}
+
+.up {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    z-index: 15;
+    top: 550px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+
+}
+
+/** header */
+header {
+    background-color: white !important;
+}
+
+/** navbar */
+nav.navbar {
+    background-color: #0c0f38 !important;
+}
+
+/* search & logo */
+
+.navbar-brand .circleLogoDiv {
+    position: relative;
+    top: 0;
+    left: 10px;
+    box-shadow: #022e3f 0px 7px 20px 1px;
+    width: 70px;
+    height: 70px;
+}
+
+p.logoPageTwo {
+    font-size: 25px;
+    color: #ffffff;
+    font-style: italic;
+    font-family: "Allura", cursive;
+}
+
+.search {
+    color: #dfdede;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.search:focus {
+    outline: none;
+
+}
+
+.search::placeholder {
+    color: white;
+    font-family: "Allura", cursive;
+    font-weight: 500;
+}
+
+/* navbar links and icons  */
+header i {
+    color: #f1f1f1;
+}
+
+.navbarLink {
+    font-size: 12px !important;
+    color: white !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #0C0F38 !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+/** login and signup */
+/** login and signup box */
+.loginAndSignupBox {
+    position: absolute;
+    z-index: 30;
+    right: 60px;
+    top: 80px;
+    width: 300px;
+    height: 450px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 50px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    display: none;
+}
+
+
+.loginAndSignupBox h4 {
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}
+
+.loginAndSignupBox input {
+    border: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 20px;
+    background: linear-gradient(0.50turn, var(--darkBlue), #090c2cda, var(--darkBlue));
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    width: 200px;
+    height: 24px;
+}
+.common {
+    position: relative;
+}
+
+label {
+    font-size: 12px;
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    transform: translateY(-125%);
+    pointer-events: none;
+    color: black;
+    transition: color .2s linear;
+    border: 0.2px solid black;
+    border-radius: 8px;
+    padding: 3px;
+    z-index: 5;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 1) 100%);
+}
+
+
+input:focus {
+    outline: 0;
+}
+
+input:focus+label {
+    color: rgb(128, 13, 13);
+    border-color: rgb(128, 13, 13);
+}
+
+/* login section */
+.login {
+    backface-visibility: hidden;
+}
+/* forgot password  */
+.forgotPassword {
+    font-size: 12px;
+    color: #8e1c08 !important;
+    border-bottom: 0.5px solid #8e1c08;
+    transition: all .2s linear;
+
+}
+
+.forgotPassword:hover {
+    color: #a88585 !important;
+    border-bottom: 0.5px solid #a88585;
+}
+/* login with google  */
+.login .loginWithGoogle {
+    width: 100%;
+    height: 30px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: background .2s linear;
+}
+
+.login .loginWithGoogle:hover {
+
+    background: rgb(230, 230, 230);
+
+}
+
+.login .loginWithGoogle a {
+    width: 250px;
+    height: 40px;
+
+
+}
+
+.login .loginWithGoogle img {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+.login .loginWithGoogle p {
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+/* account Message  */
+.accountMessage,
+.signupLink {
+    font-size: 14px;
+}
+
+.accountMessage span {
+    color: #0C0F38;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: font-size .3s linear;
+}
+
+.accountMessage span:hover {
+    font-size: 18px;
+}
+/* signup section */
+.signup {
+    background-color: #ffffff !important;
+    transform: rotateY(180deg);
+    width: 300px !important;
+    height: 480px !important;
+    position: absolute;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+
+}
+
+.loginSectionIcon,
+.closeSection {
+    color: var(--darkBlue);
+}
+
+.signup input {
+    width: 135px;
+    height: 24px;
+}
+
+.signup .binaryInput,
+.singleInput {
+
+    width: 100%;
+    padding: 0 10px;
+    height: 60px;
+}
+
+.signup .singleInput input {
+    width: 280px;
+}
+
+.btnBox {
+    width: 100%;
+}
+
+.loginAndSignupBox .btn,.shoppingBox .btn{
+    background: linear-gradient(135deg, black, var(--darkBlue)) !important;
+    width: 200px;
+    height: 40px;
+    transition: background .8s linear;
+
+}
+.loginAndSignupBox .btn,.shoppingBox .btn {
+    background: linear-gradient(195deg, rgb(21, 21, 21), var(--darkBlue)) !important;
+}
+
+.shoppingBox {
+    position: absolute;
+    z-index: 3;
+    right: 10px;
+    top: 80px;
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+.shoppingBox .noProductBox{
+  background: rgb(231, 234, 250) !important;  
+ 
+}
+
+.optionsBox {
+    position: absolute;
+    z-index: 3;
+    right: 10px;
+    top: 80px;
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+
+/** Section links */
+/* top Links */
+.topLinks li a,
+.bottomLinks li a {
+    font-size: 12px !important;
+}
+
+.topLinks ul li a {
+
+    color: rgb(136, 0, 0) !important;
+    transition: color .2s linear;
+}
+
+.topLinks ul li a:hover {
+    color: rgb(238, 5, 5) !important;
+}
+
+/* bottom Links */
+.galleryContainer {
+    position: absolute;
+    z-index: 10;
+    top: 187px;
+    left: 0;
+    display: none !important;
+    font-style: italic;
+}
+
+.galleryContainer h3 {
+    font-family: 'EB Garamond', serif;
+    color: rgb(63, 63, 63);
+}
+
+.galleryContainer .col-md-3 {
+    display: none;
+    flex-direction: column;
+}
+
+
+.bottomLinks li:hover+.galleryContainer,
+.galleryContainer:hover {
+    display: flex !important;
+}
+
+.bottomLinks a {
+    color: black !important;
+}
+
+.bottomLinks a:hover {
+    color: #4a4a4a !important;
+}
+
+/** dkldkldkslkdls */
+/* ringed picture */
+.ringedPicture {
+    background-image: url(images/circle-bg-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+
+}
+
+/* discount notice */
+.discountNoticeBox {
+    width: 600px !important;
+    height: 100%;
+}
+
+.discountNotice {
+    color: #ececec !important;
+    font-size: 50px !important;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.pageTwo span {
+    background: transparent !important;
+    opacity: 1 !important;
+
+}
+
+.discountNotice span {
+    font-size: 55px;
+    font-weight: 500;
+    font-style: normal;
+    font-family: sans-serif;
+    text-shadow: -1px 6px 15px #c5c5c542, -1px -6px 15px #ffffff4c;
+}
+
+.discountNoticeButton {
+    font-family: Arial, Helvetica, sans-serif;
+    animation: box-shadow 2s linear infinite;
+    width: 200px;
+    height: 50px;
+
+}
+
+@keyframes box-shadow {
+    0% {
+        box-shadow: -1px 6px 15px #c5c5c5, -1px -6px 15px #ffffff;
+    }
+
+    50% {
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: -1px 6px 15px #c5c5c5, -1px -6px 15px #ffffff;
+    }
+}
+
+/* rings img */
+
+.rings {
+    width: 300px !important;
+    height: 100%;
+}
+
+.rings img {
+    width: 265px !important;
+}
+
+
+.filter,
+.sorting {
+    position: absolute;
+    z-index: 2;
+    top: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    display: none;
+}
+
+.filter {
+    right: 210px;
+}
+
+.sorting {
+    right: 10px;
+}
+
+.filter .filtername,
+.sorting .sortingname {
+    background-color: #212529;
+    transition: all .2s linear;
+    margin-bottom: 1px;
+    font-size: 10px;
+}
+
+.filter .filtername:hover,
+.sorting .sortingname:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.productCode {
+    display: none;
+
+}
+
+.card:hover .productCode {
+    display: inline-block;
+}
+
+.card {
+
+    transition: box-shadow .3s linear;
+
+}
+
+.card:hover {
+    box-shadow: rgba(137, 137, 179, 0.89) 0px 5px 15px;
+}
+
+.card .btn {
+    background: var(--darkBlue);
+}
+
+.card img {
+    width: 90px;
+
+}
+
+.card .btn:hover {
+    background-color: #22276d;
+}
+
+.card-title {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.indirim {
+    background: linear-gradient(to bottom, #d1d1d1, #ececec) !important;
+    box-shadow: rgba(217, 217, 248, 0.89) 0px 7px 29px 0px;
+    margin-top: -4px;
+    font-size: 12px;
+}
+
+.para {
+    font-family: 'Kalnia', serif;
+
+}
+
+.ürünbutonu {
+    font-size: 20px !important;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, black, var(--darkBlue)) !important;
+
+
+}
+
+
+
+/** font-family: 'Kalnia', serif; fiyat
+font-family: 'Playfair Display', serif; */
+
+
+
+
+
+
+/** .activee {
+    box-shadow: rgb(255, 255, 255) 0px 5px 55px;
+
+
+} */
+
+.chevron {
+    width: 60px;
+    height: 60px;
+    background: #969696a9;
+    cursor: pointer;
+}
+
+
+.puzzleDiv {
+    margin: 150px 0;
+
+}
+
+.sliderr {
+    background: var(--darkBlue);
+}
+
+
+
+
+.puzzle .row .col-4 {
+    width: 180px;
+    height: 180px;
+
+    border: 1px solid black;
+    margin: 5px;
+    transition: margin 0.5s;
+    box-shadow: rgb(119, 115, 115) 0px 5px 25px;
+
+}
+
+.puzzle1 .row .col-4 {
+    background-image: url(images/puzzle1-bg-.png);
+}
+
+.puzzle2 .row .col-4 {
+    background-image: url(images/puzzle2-bg.png);
+}
+
+.puzzle3 .row .col-4 {
+    background-image: url(images/puzzle3-bg.png);
+}
+
+.puzzle4 .row .col-4 {
+    background-image: url(images/puzzle4-bg.png);
+}
+
+.puzzle .row:nth-child(1) .col-4:nth-child(1) {
+    background-position: 0 0;
+}
+
+.puzzle .row:nth-child(1) .col-4:nth-child(2) {
+    background-position: 50.33% 0;
+}
+
+.puzzle .row:nth-child(1) .col-4:nth-child(3) {
+    background-position: -50% 0;
+}
+
+.puzzle .row:nth-child(2) .col-4:nth-child(1) {
+    background-position: 0 50%;
+}
+
+.puzzle .row:nth-child(2) .col-4:nth-child(2) {
+    background-position: 50% 50%;
+}
+
+.puzzle .row:nth-child(2) .col-4:nth-child(3) {
+    background-position: -50% 50%;
+}
+
+.puzzle .row:nth-child(3) .col-4:nth-child(1) {
+    background-position: 0 -50%;
+}
+
+.puzzle .row:nth-child(3) .col-4:nth-child(2) {
+    background-position: 50% -50%;
+}
+
+.puzzle .row:nth-child(3) .col-4:nth-child(3) {
+    background-position: -50% -50%;
+    ;
+}
+
+.puzzle:hover .col-4 {
+    margin: 0 !important;
+    border: none;
+    box-shadow: none;
+}
+
+
+.col-sm-2 {
+
+    padding: 10px;
+}
+
+.col-sm-2 p {
+    margin-top: 20px;
+}
+
+.col-sm-2:nth-child(5) {
+    margin-top: -15px;
+}
+
+.col-sm-2:nth-child(6) {
+    margin-top: 9px;
+}
+
+.col-sm-2:nth-child(6) p {
+    margin-top: 28px;
+}
+
+.carddbottom {
+
+    display: none;
+    transition: display .9s linear;
+}
+
+
+/* .marqueeDivv, .marqueeDiv{
+    height: 200px;
+    
+
+} */
+.marqueedivs {
+    background: linear-gradient(135deg, black, var(--darkBlue)) !important;
+    padding: 20px 0px;
+
+}
+
+
+.marqueeDivv .col-2 .kare {
+    width: 150px;
+    height: 150px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border-top: 4px solid #020113; 
+  border-left: 
+  4px solid #020113; */
+    box-shadow: -1px -5px 7px -2px #f4f4f45f;
+    /* box-shadow: #b1b2c2 0px 5px 10px; */
+    border-radius: 50%;
+
+}
+
+
+.uzundiv {
+    background-color: var(--darkBlue);
+    height: 420px;
+    margin-top: 180px !important;
+}
+
+.box-1 {
+    width: 600px;
+
+
+}
+
+.box-1 p {
+    font-family: 'EB Garamond', serif !important;
+    font-size: 30px !important;
+
+}
+
+
+
+.marqueeDivv1 .col-2:nth-child(1) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/10/7f/90/107f90a1569f164867747478856c0acc.jpg);
+
+
+}
+
+.marqueeDivv1 .col-2:nth-child(2) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/5a/c1/d5/5ac1d5a2e67d6e36c4824de603eb0ad5.jpg);
+
+
+}
+
+.marqueeDivv1 .col-2:nth-child(3) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/73/08/b3/7308b3d9fbd187966665f22538120e1c.jpg);
+
+
+}
+
+.marqueeDivv1 .col-2:nth-child(4) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/07/be/0c/07be0ca0567924a2659f73982b9b75b6.jpg);
+
+
+}
+
+.marqueeDivv1 .col-2:nth-child(5) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/10/7f/90/107f90a1569f164867747478856c0acc.jpg);
+
+
+}
+
+.marqueeDivv1 .col-2:nth-child(6) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/5a/c1/d5/5ac1d5a2e67d6e36c4824de603eb0ad5.jpg);
+
+
+}
+
+
+
+.marqueeDivv2 .col-2:nth-child(1) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/e3/b8/e4/e3b8e48e1a1f8d85ca6e5ec591abe59e.jpg);
+
+
+}
+
+.marqueeDivv2 .col-2:nth-child(2) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/da/94/f2/da94f22c12538e7ddee47aad38cb3a57.jpg);
+
+
+}
+
+.marqueeDivv2 .col-2:nth-child(3) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/d6/64/57/d6645757f5f4aeb388f0b79a0d51ec00.jpg);
+
+
+}
+
+.marqueeDivv2 .col-2:nth-child(4) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/f3/80/ba/f380ba719a060632b8d3a41fd48d8949.jpg);
+
+
+}
+
+.marqueeDivv2 .col-2:nth-child(5) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/e3/b8/e4/e3b8e48e1a1f8d85ca6e5ec591abe59e.jpg);
+
+
+}
+
+.marqueeDivv2 .col-2:nth-child(6) .kare {
+
+    background-image: url(https://i.pinimg.com/564x/da/94/f2/da94f22c12538e7ddee47aad38cb3a57.jpg);
+
+
+}
+
+
+
+
+
+.marqueeDiv {
+    margin: 25px 0;
+    height: 100px;
+
+}
+
+.marqueeDiv marquee {
+    font-size: 50px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-shadow: rgba(255, 255, 255, 0.514) 0px 5px 15px;
+}
+
+
+
+.soruCevapDiv {
+    background-color: black;
+}
+
+.soruCevapDiv h3 {
+    color: rgb(234, 234, 234);
+}
+
+.soruCevapDiv .cardd {
+    background: linear-gradient(0.50turn, #a8a8a89e, #777777, #4848489e);
+}
+
+
+
+@media screen and (max-width:1222px) {
+
+    .chevron {
+        opacity: 0;
+    }
+
+    .chevron i {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:1190px) {
+
+    .chevron {
+        opacity: 1;
+        background-color: transparent !important;
+    }
+
+    .chevron i {
+        display: none !important;
+    }
+
+    .chevron i {
+        display: inline-block !important;
+        color: white !important;
+    }
+
+
+
+    .ringedPicture {
+        width: 350px;
+        height: 350px;
+        margin: auto 0;
+    }
+
+    .rings img {
+        width: 300px !important;
+    }
+
+    .discountNoticeBox {
+        width: 400px;
+    }
+
+    .discountNoticeBox .discountNotice {
+        font-size: 40px !important;
+    }
+
+    .discountNoticeBox .discountNotice span {
+        font-size: 45px;
+    }
+
+
+}
+
+
+@media screen and (max-width:1110px) {
+
+    .bottomLinks li a {
+        font-size: 11px !important;
+    }
+
+}
+
+@media screen and (max-width:1052px) {
+
+    .bottomLinks li a {
+        font-size: 10px !important;
+    }
+
+}
+@media screen and (max-width:990px) {
+    .shoppingBox h4{
+font-size: 22px;
+    }
+    .shoppingBox p{
+font-size: 15px;
+
+    }
+  .loginAndSignupBox{
+    right:110px;
+  }
+
+}
+
+@media screen and (max-width:986px) {
+    .bottomLinks ul {
+        display: none !important;
+    }
+
+    .bottomLinks {
+        background-color: white !important;
+    }
+
+}
+
+
+@media screen and (max-width:900px) {
+
+    .rings img {
+        width: 200px !important;
+    }
+
+    .ringedPicture {
+        margin-top: 50px;
+    }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .ringedPicture {
+        width: 300px;
+        height: 300px;
+        margin: 80px 0 0 0;
+    }
+
+    .discountNoticeButton {
+        width: 150px !important;
+        height: 40px !important;
+
+    }
+
+    .discountNoticeBox {
+        margin-top: 20px;
+        height: 300px;
+    }
+
+    .discountNoticeBox .discountNotice {
+        font-size: 30px !important;
+    }
+
+    .discountNoticeBox .discountNotice span {
+        font-size: 35px;
+    }
+
+    .rings img {
+        width: 150px !important;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:690px) {
+    .ringedPicture {
+        width: 0px;
+        height: 0px;
+
+    }
+
+
+    .navbar-toggler {
+        font-size: 15px !important;
+    }
+
+    .search {
+        width: 100px;
+
+    }
+
+    .topLinks ul {
+        display: none !important;
+    }
+.loginAndSignupBox{
+    width: 270px;
+    height: 410px;
+    padding: 30px;
+}
+}
+
+@media screen and (max-width:570px) {
+
+    .discountNotice span {
+        display: inline !important;
+    }
+}
+
+@media screen and (max-width:558px) {
+
+   
+.box2 div {
+    width: 120px !important;
+    height: 220px !important;
+
+} 
+}
+
+
+
+
+@media screen and (max-width:490px) {
+    .topLinks .row {
+        display: none !important;
+
+    }
+
+}
+
+@media screen and (max-width:474px) {
+
+   
+    .box2 div {
+        width: 100px !important;
+        height: 200px !important;
+    
+    } 
+    
+    .box2 .divv img{
+      
+        width:70px !important;
+        height: auto;
+       
+    }
+    
+}    
+
+@media screen and (max-width:425px) {
+    .navbar-toggler {
+        font-size: 13px !important;
+    }
+
+    .search {
+        width: 90px;
+
+    }
+
+}
+
+
+@media screen and (max-width:406px) {
+
+   
+    .box2 div {
+        width: 80px !important;
+        height: 140px !important;
+    
+    } 
+    
+    .box2 .divv img{
+      
+        width:50px !important;
+        height: auto;
+       
+    }
+    
+}   
+@media screen and (max-width:387px) {
+    .loginAndSignupBox{
+       right: 75px;
+       width: 250px !important;
+       height: 390px !important;
+    }
+   
+}
+@media screen and (max-width:375px) {
+
+    .fa-search {
+        display: none !important;
+    }
+
+    .rings {
+        width: 200px;
+    }
+
+    .rings img {
+        width: 100px !important;
+    }
+
+}
+
+.uzundiv .box2 {
+    width: 500px;
+}
+
+.box2 div {
+    width: 150px;
+    height: 250px;
+    background: rgba(184, 193, 184, 0.64);
+    backdrop-filter: blur(15px);
+}
+
+.box2 .divv{
+    position: relative;
+}
+.box2 .divv img{
+    position: absolute;
+    width: 90px;
+    height: auto;
+    display: none;
+}
+.block{
+    display: block !important;
 }

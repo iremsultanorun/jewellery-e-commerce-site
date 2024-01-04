@@ -1,0 +1,688 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+
+}
+
+:root {
+    --darkBlue: #0C0F38;
+}
+
+i {
+    cursor: pointer;
+}
+
+.circleLogoDiv {
+    width: 100px;
+    height: 100px;
+    background: #090C2C;
+    position: absolute;
+    z-index: 5;
+    top: 240px;
+    left: 375px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleLogoDiv .logo {
+    font-size: 30px;
+    color: #ffffff;
+    font-style: italic;
+    font-family: "Allura", cursive;
+}
+
+header {
+    background-color: white !important;
+}
+
+/** navbar */
+nav.navbar {
+    background-color: #0c0f38 !important;
+}
+
+/* search & logo */
+
+.navbar-brand .circleLogoDiv {
+    position: relative;
+    top: 0;
+    left: 10px;
+    box-shadow: #022e3f 0px 7px 20px 1px;
+    width: 70px;
+    height: 70px;
+}
+
+p.logoPageTwo {
+    font-size: 25px;
+    color: #ffffff;
+    font-style: italic;
+    font-family: "Allura", cursive;
+}
+
+.search {
+    color: #dfdede;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.search:focus {
+    outline: none;
+
+}
+
+.search::placeholder {
+    color: white;
+    font-family: "Allura", cursive;
+    font-weight: 500;
+}
+
+/* navbar links and icons  */
+header i {
+    color: #f1f1f1;
+}
+
+.navbarLink {
+    font-size: 12px !important;
+    color: white !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #0C0F38 !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* login */
+
+.loginBox {
+    position: absolute;
+    z-index: 3;
+    right: 60px;
+    top: 80px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 3px;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.login input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.loginEmail,
+.loginPassword {
+    position: relative;
+}
+
+.loginEmail label,
+.loginPassword label {
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-125%);
+    pointer-events: none;
+    color: black;
+    transition: color .2s linear;
+}
+
+
+.loginEmail input:focus,
+.loginPassword input:focus {
+    outline: 0;
+}
+
+input:focus+label {
+    color: rgb(128, 13, 13);
+}
+
+.login .loginWithGoogle {
+    width: 100%;
+    height: 60px;
+}
+
+.login .loginWithGoogle a {
+    width: 250px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.login .loginWithGoogle img {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+.login .loginWithGoogle p {
+    margin-bottom: 4px;
+}
+
+.shoppingBox {
+    position: absolute;
+    z-index: 3;
+    right: 10px;
+    top: 80px;
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+
+.barsBox {
+    position: absolute;
+    z-index: 3;
+    right: 10px;
+    top: 80px;
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+
+/** Section links */
+/* top Links */
+.topLinks li a,
+.bottomLinks li a {
+    font-size: 12px !important;
+}
+
+.topLinks ul li a {
+
+    color: rgb(136, 0, 0) !important;
+    transition: color .2s linear;
+}
+
+.topLinks ul li a:hover {
+    color: rgb(238, 5, 5) !important;
+}
+
+/* bottom Links */
+.galleryContainer {
+    position: absolute;
+    z-index: 10;
+    top: 187px;
+    left: 0;
+    display: none !important;
+    font-style: italic;
+}
+
+.galleryContainer h3 {
+    font-family: 'EB Garamond', serif;
+    color: rgb(63, 63, 63);
+}
+
+.galleryContainer .col-md-3 {
+    display: none;
+    flex-direction: column;
+}
+
+
+.bottomLinks li:hover+.galleryContainer,
+.galleryContainer:hover {
+    display: flex !important;
+}
+
+.bottomLinks a {
+    color: black !important;
+}
+
+.bottomLinks a:hover {
+    color: #4a4a4a !important;
+}
+
+.div1 {
+   
+    margin-top: 50px !important;
+}
+
+.custom-cointer div {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #F0EEEF;
+    width: 100px;
+}
+
+.div2
+ {
+    height: 400px;
+    width: 400px;
+ 
+}
+.div3{
+    width: 400px;
+}
+
+.div2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.div2{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) -1.95px -1.95px 26px;
+}
+.div3{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 26px;
+}
+.iconslider{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+.iconslider i{
+    box-shadow: rgba(100, 100, 111, 0.694) 0px 7px 29px 0px;
+}
+.div1 .img img {
+    width: 100px;
+    width: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+
+.img img {
+    display: block;
+}
+
+.div3 {
+    width: 550px;
+
+}
+
+.indirim {
+    background: var(--darkBlue) !important;
+    box-shadow: rgba(217, 217, 248, 0.89) 0px 7px 29px 0px;
+    margin-top: -4px;
+    font-size: 12px;
+}
+
+.para {
+    font-family: 'Kalnia', serif;
+
+}
+.taksit{
+    font-size: 11px;
+}
+.hemenal{
+    background: linear-gradient(to bottom, #d1d1d1, #ececec) !important;
+}
+
+form select{
+    width: 200px;
+    height: 40px;
+}
+option:active{
+    background: var(--darkBlue);
+}
+input:focus{
+    outline: none;
+}
+.ha .col-2{
+border-bottom: 0.2px solid black;
+height: 40px;
+font-size: 11px;
+}
+@media screen and (max-width:984px) {
+    .ha .col-2{
+  
+        font-size: 9px;
+        }
+}
+@media screen and (max-width:916px) {
+    .ha .col-2{
+  
+        font-size: 15px;
+        }
+}
+@media screen and (max-width:840px) {
+    .ha .col-2{
+  height: 55px;
+      
+        }
+}
+@media screen and (max-width:656px) {
+    .ha .col-2{
+        height: 45px;
+ font-size: 11px;
+      
+        }
+}
+@media screen and (max-width:542px) {
+    .ha .col-2{
+        height: 45px;
+ font-size: 9px;
+      
+        }
+}
+@media screen and (max-width:398px) {
+    .ha .col-2{
+        height: 45px;
+ font-size: 8px;
+      
+        }
+}
+@media screen and (max-width:320px) {
+    .ha .col-2{
+        height: 45px;
+ font-size: 7px;
+      
+        }
+}
+
+
+/* .soruCevapDiv {
+    background-color: black;
+} */
+
+.soruCevapDiv h3 {
+    color: rgb(234, 234, 234);
+}
+
+
+
+.soruCevapDiv .cardd {
+    background: linear-gradient(0.50turn, var(--darkBlue),#090c2cda, var(--darkBlue));
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.carddbottom {
+
+    display: none;
+    transition: display .9s linear;
+}
+
+
+@media screen and (max-width:1222px) {
+    .chevron {
+        opacity: 0;
+    }
+
+    .chevron i {
+        display: none !important;
+    }
+}
+@media screen and (max-width:1190px) {
+
+    .chevron {
+        opacity: 1;
+        background-color: transparent !important;
+    }
+
+    .chevron i {
+        display: none !important;
+    }
+
+    .chevron i {
+        display: inline-block !important;
+        color: white !important;
+    }
+
+}
+@media screen and (max-width:1122px) {
+    .div3 {
+        width: 500px !important;
+    }
+}
+@media screen and (max-width:1110px) {
+
+    .bottomLinks li a {
+        font-size: 11px !important;
+    }
+
+}
+@media screen and (max-width:1095px) {
+    .div3 {
+        width: 490px !important;
+    }
+}
+
+@media screen and (max-width:1062px) {
+    .div3 {
+        width: 470px !important;
+    }
+}
+@media screen and (max-width:1052px) {
+
+    .bottomLinks li a {
+        font-size: 10px !important;
+    }
+
+}
+
+@media screen and (max-width:1042px) {
+    .div2 {
+        width: 350px
+    }
+}
+
+@media screen and (max-width:994px) {
+    .div3 {
+        width: 440px !important;
+    }
+}
+@media screen and (max-width:986px) {
+    .bottomLinks ul {
+        display: none !important;
+    }
+
+    .bottomLinks {
+        background-color: white !important;
+    }
+
+}
+
+@media screen and (max-width:962px) {
+    .div3 {
+        width: 400px !important;
+    }
+}
+
+@media screen and (max-width:922px) {
+    .img img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .custom-cointer div {
+        width: 150px;
+    }
+
+    .div4 {
+        margin-left: 100px !important;
+    }
+
+    .div2 {
+        width: 600px;
+    }
+
+    .div3 {
+        width: 100% !important;
+        margin-top: 50px;
+
+    }
+}
+
+@media screen and (max-width:798px) {
+
+    .img img {
+        width: 130px !important;
+        height: 130px !important;
+    }
+
+    .custom-cointer div {
+        width: 130px;
+    }
+
+}
+
+@media screen and (max-width:792px) {
+
+    .div2 {
+        width: 570px;
+    }
+
+
+}
+
+@media screen and (max-width:758px) {
+
+    .div2 {
+        width: 550px;
+    }
+
+
+}
+
+@media screen and (max-width:742px) {
+
+    .div2 {
+        width: 520px;
+    }
+
+
+}
+
+@media screen and (max-width:712px) {
+
+    .div2 {
+        width: 500px;
+    }
+
+
+}
+
+@media screen and (max-width:690px) {
+
+    .div2 {
+        width: 480px;
+    }
+
+    .navbar-toggler {
+        font-size: 15px !important;
+    }
+
+    .search {
+        width: 100px;
+
+    }
+
+    .topLinks ul {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width:670px) {
+
+    .div2 {
+        width: 460px;
+    }
+}
+
+@media screen and (max-width:650px) {
+
+    .div2 {
+        width: 440px;
+    }
+
+
+}
+
+@media screen and (max-width:630px) {
+
+    .div2 {
+        width: 420px;
+    }
+
+
+}
+
+@media screen and (max-width:610px) {
+
+    .div2 {
+        width: 400px;
+    }
+
+
+}
+@media screen and (max-width:576px) {
+    .div4 .img img {
+        display: none;
+    }
+
+    .div4 {
+        margin: 0 !important;
+    }
+
+    .div2 {
+        width: 80% !important;
+        height: auto;
+        border-radius: 20px !important;
+    }
+
+    .div2 img {
+        border-radius: 2px !important;
+    }
+
+    .img img {
+        width: 90px !important;
+        height: auto !important;
+    }
+
+    .custom-cointer {
+
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:490px) {
+    .topLinks .row {
+        display: none !important;
+
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .navbar-toggler {
+        font-size: 13px !important;
+    }
+
+    .search {
+        width: 90px;
+
+    }
+
+}
+
+@media screen and (max-width:395px) {
+
+   .para span{
+    font-size: 15px !important;
+    margin-left: 5px !important;
+   }
+
+
+}
+@media screen and (max-width:375px) {
+
+    .fa-search {
+        display: none !important;
+    }
+
+
+
+}

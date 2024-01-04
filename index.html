@@ -19,48 +19,1143 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+
+  <!--indirim ve kayan yazı içinki yazı fontları-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kalnia:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+
   <!--* bootstrap link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
-  <div class="container-fluid slider">
-    <div class="page pageOne active  ">
-      <div class=" leftDiv ">
 
-          <div class="necklaceDiv">
-            <img src="png-2.png" alt="">
-          <img src="png-3.png" alt="">
+  <div class="container-fluid slider">
+    <!--! Main Page -->
+
+    <!--? Snowflakes make with js -->
+
+    <div class="page pageOne active  ">
+      <!--* Left Box -->
+      <div class=" leftDiv ">
+        <!-- Ribbons Image Box -->
+        <div class="RibbonsDiv">
+          <img src="images/ribbon1.png" alt="">
+          <img src="images/ribbon2.png" alt="">
+          <!-- Logo -->
           <div class="circleLogoDiv">
-            <p class="logo  mx-auto my-auto">PJ</p>  
-            </div>
+            <p class="logo mx-auto my-auto">PJ</p>
+          </div>
         </div>
       </div>
+      <!--* Right Box -->
       <div class=" rightDiv ">
+
+        <!--? Spans make with js -->
+
+        <!-- greeting box -->
         <div class="greeting">
           <h2 class="greetingTitle">happy new year</h2>
           <button class="exploreButton">explore <i class="fa-solid fa-angles-right"></i></button>
         </div>
       </div>
     </div>
-    <div class="page pageTwo ">
-      <header class="container-sm bg-primary">
-        <nav>
-          <ul>
-            <li><a href="#">Yüzükler</a></li>
-            <li><a href="#">sezonlar</a></li>
-            <li><a href="#">takılar</a></li>
-            <li><a href="#">hakkımızda/a></li>
-          </ul>
+    <!--! E-commerce Page -->
+    <!--* up -->
+    <div id="up" class=" page pageTwo">
+      <a href="#up">
+        <div class="up rounded-circle bg-primary d-flex align-items-center justify-content-center">up</div>
+      </a>
+      <!--* header -->
+      <header style="width: 100% !important;">
+        <!--*  navbar -->
+        <nav class="navbar navbar-expand-lg bg-primary flex-nowrap justify-content-between">
+          <!--* search & logo -->
+          <div class="container-fluid">
+            <!-- logo -->
+            <a href="#" class="navbar-brand">
+              <div class="circleLogoDiv">
+                <p class="logoPageTwo mx-auto my-auto">PJ</p>
+              </div>
+            </a>
+            <!-- search -->
+            <div class="input-group-md mx-auto flex-nowrap">
+              <input type="text" class="search bg-transparent border-0 border-bottom border-light p-1  "
+                placeholder="Search">
+              <i class="fas fa-search text-light fa-sm searchIcon "></i>
+            </div>
+          </div>
+          <!--* icons that appear as the screen is minimized -->
+          <button class="navbar-toggler border-0" type="button">
+            <!--* login -->
+            <a href="#" class="userIcon"><i class="fas fa-user "></i></a>
+          </button>
+          <!--* login And Signup Box  -->
+          <div class="loginAndSignupBox  ">
+            <!-- login section -->
+            <div class="login">
+              <h4 class=" mb-4 text-center text-capitalize fs-3">login</h4>
+              <form>
+                <div class="loginEmail common mt-3">
+                  <input type="email" name="email">
+                  <label for="email">Email</label>
+                </div>
+                <div class="loginPassword common mt-4 mb-2">
+                  <input type="password" name="password">
+                  <label for="password">Password</label>
+                </div>
+                <a href="#" class="forgotPassword text-lowercase"> Forgot Password</a>
+              </form>
+              <div class="loginWithGoogle d-flex justify-content-center align-items-center mt-4 ">
+                <a href="#" class="d-flex align-items-center px-2 ">
+                  <img src="images/googleIcon.png" alt="">
+                  <p>Login With Google</p>
+                </a>
+              </div>
+              <p class=" accountMessage mt-4 ">Do you not have an account? <span class="signupButton">Signup</span>
+              </p>
+            </div>
+            <!--signup section -->
+            <div class="signup rounded-1 pt-4">
+              <div class="sectionIcon container-fluid py-2 d-flex align-items-center justify-content-between">
+                <i class="loginSectionIcon fa-solid fa-angle-left"></i>
+                <i class="closeSection fa-solid fa-xmark"></i>
+              </div>
+              <h4 class=" mb-4 text-center text-capitalize fs-3">signup</h4>
+              <form>
+                <div class="binaryInput d-flex align-items-center justify-content-between">
+                  <div class="common mt-3">
+                    <input type="name" name="name">
+                    <label for="text" class="text-capitalize">name</label>
+                  </div>
+                  <div class="common mt-4 mb-2">
+                    <input type="surname" name="surname">
+                    <label for="text" class="text-capitalize">surname</label>
+                  </div>
+                </div>
+                <div class="singleInput mt-2 d-flex align-items-center justify-content-center ">
+                  <div class="common mt-3">
+                    <input type="email" name="email">
+                    <label for="email" class="text-capitalize">e-mail</label>
+                  </div>
+                </div>
+                <div class="binaryInput mt-2 d-flex align-items-center justify-content-between">
+                  <div class="common mt-3">
+                    <input type="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$"
+                      required>
+                    <label for="password" class="text-capitalize">password</label>
+                  </div>
+                  <div class="common mt-4 mb-2">
+                    <input type="password" name="confirm-password">
+                    <label for="confirm-password" class="text-capitalize">confirm password</label>
+                  </div>
+                </div>
+                <div class="singleInput mt-2 d-flex align-items-center justify-content-center ">
+                  <div class="common mt-3">
+                    <input type="text" name="gsm">
+                    <label for="gsm" class="text-capitalize">gsm</label>
+                  </div>
+                </div>
+                <div class="btnBox d-flex justify-content-center my-5">
+                  <button class="btn text-light text-capitalize">save</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!--* shopping bag -->
+          <button class="navbar-toggler border-0 " type="button">
+            <a href="#" class="shoppingBag"><i class="fas fa-shopping-bag "></i></a>
+            <!--* shopping Box -->
+            <div class="shoppingBox ">
+              <h4 class="text-capitalize text-center my-5">shopping cart</h4>
+              <div class="noProductBox container-fluid mt-5 p-2 ">
+                <p class="text-center">There are no items in your shopping cart.</p>
+              </div>
+              <div class="btnBox d-flex justify-content-center my-5">
+                <a href="#products" class="btn text-light text-capitalize">start shopping</a>
+              </div>
+            </div>
+          </button>
+          <!--* options -->
+          <button class="navbar-toggler  border-0" type="button">
+            <a href="#" class="bars"> <i class="fas fa-bars"></i></a>
+            <!--* options box -->
+            <!--! bura düzenlencek -->
+            <div class="optionsBox">
+              <p>Baguette Diamonds</p>
+              <p>Diamond Rings</p>
+              <p>Diamond Necklaces</p>
+              <p>Diamond Earrings</p>
+              <p>Diamond Bracelets</p>
+              <p>Wedding Bands</p>
+              <p>Sets</p>
+            </div>
+          </button>
+          <!--* navbar links and icons -->
+          <div class="collapse flex-nowrap  navbar-collapse">
+            <div class="navbar-nav d-flex justify-content-between ">
+              <a class="navbarLink nav-link  text-uppercase" href="#">stores</a>
+              <a class="navbarLink nav-link  text-uppercase ms-5 " href="#">orders</a>
+              <a class="navbarLink nav-link text-uppercase mx-5" href="#">warranty registration</a>
+              <!--* login and signup -->
+              <a class="userIcon nav-link ms-5" href="#"><i class="fas fa-md fa-user " style="font-size: 15px;"></i>
+              </a>
+              <!--* login and signup box -->
+              <div class="loginAndSignupBox  ">
+                <!-- login section -->
+                <div class="login">
+                  <h4 class=" mb-4 text-center text-capitalize fs-3">login</h4>
+                  <form>
+                    <!-- login mail -->
+                    <div class="loginEmail common mt-3">
+                      <input type="email" name="email">
+                      <label for="email">Email</label>
+                    </div>
+                    <!-- login password -->
+                    <div class="loginPassword common mt-4 mb-2">
+                      <input type="password" name="password">
+                      <label for="password">Password</label>
+                    </div>
+                    <!-- forgot password -->
+                    <a href="#" class="forgotPassword text-lowercase"> Forgot Password</a>
+                  </form>
+                  <!-- login with google -->
+                  <div class="loginWithGoogle d-flex justify-content-center align-items-center mt-4 ">
+                    <a href="#" class="d-flex align-items-center px-2 ">
+                      <img src="images/googleIcon.png" alt="">
+                      <p>Login With Google</p>
+                    </a>
+                  </div>
+                  <!-- account Message -->
+                  <p class=" accountMessage mt-4 ">Do you not have an account? <span class="signupButton">Signup</span></p>
+                </div>
+                <!--signup section -->
+                <div class="signup rounded-1 pt-4">
+                  <div class="sectionIcon container-fluid py-2 d-flex align-items-center justify-content-between">
+                   <!-- Icon to Return to Login  -->
+                    <i class="loginSectionIcon fa-solid fa-angle-left"></i>
+                    <!-- close section -->
+                    <i class="closeSection fa-solid fa-xmark"></i>
+                  </div>
+                  <h4 class=" mb-4 text-center text-capitalize fs-3">signup</h4>
+                  <form>
+                    <div class="binaryInput d-flex align-items-center justify-content-between">
+                      <div class="common mt-3">
+                        <input type="name" name="name">
+                        <label for="text" class="text-capitalize">name</label>
+                      </div>
+                      <div class="common mt-4 mb-2">
+                        <input type="surname" name="surname">
+                        <label for="text" class="text-capitalize">surname</label>
+                      </div>
+                    </div>
+                    <div class="singleInput mt-2 d-flex align-items-center justify-content-center ">
+                      <div class="common mt-3">
+                        <input type="email" name="email">
+                        <label for="email" class="text-capitalize">e-mail</label>
+                      </div>
+                    </div>
+                    <div class="binaryInput mt-2 d-flex align-items-center justify-content-between">
+                      <div class="common mt-3">
+                        <input type="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$"
+                          required>
+                        <label for="password" class="text-capitalize">password</label>
+                      </div>
+                      <div class="common mt-4 mb-2">
+                        <input type="password" name="confirm-password">
+                        <label for="confirm-password" class="text-capitalize">confirm password</label>
+                      </div>
+                    </div>
+                    <div class="singleInput mt-2 d-flex align-items-center justify-content-center ">
+                      <div class="common mt-3">
+                        <input type="text" name="gsm">
+                        <label for="gsm" class="text-capitalize">gsm</label>
+                      </div>
+                    </div>
+                    <div class="btnBox d-flex justify-content-center my-5">
+                      <button class="btn text-light text-capitalize">save</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!--* shopping bag -->
+              <a class="shoppingBag nav-link mx-2" href="#"><i class="fas fa-md fa-shopping-bag "
+                  style="font-size: 15px;"></i></a>
+              <!-- shopping Box -->
+              <div class="shoppingBox ">
+                <h4 class="text-capitalize text-center my-5">shopping cart</h4>
+                <div class="noProductBox container-fluid mt-5 p-2 ">
+                  <p class="text-center">There are no items in your shopping cart.</p>
+                </div>
+                <div class="btnBox d-flex justify-content-center my-5">
+                  <a href="#products" class="btn text-light text-capitalize">start shopping</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
+        <!--* Section links -->
+        <!-- top Links -->
+        <div class="topLinks d-flex justify-content-center container-fluid pt-3">
+          <ul class=" d-flex justify-content-between align-items-center ">
+            <li class=" text-uppercase me-4"><a href="#">express shipping </a></li>
+            <li class=" text-uppercase me-4"><a href="#">Best Sellings </a></li>
+            <li class=" text-uppercase me-4"><a href="#">special prices </a></li>
+            <li class=" text-uppercase me-4"><a href="#">exclusive </a></li>
+            <li class=" text-uppercase me-4 "><a href="#">%50 discount for New Year </a></li>
+          </ul>
+        </div>
+        <!-- bottom Links -->
+        <div class="bottomLinks d-flex justify-content-center container-fluid  pt-3" style="background-color: #F8F8F8;">
+          <ul class=" d-flex justify-content-between align-items-center ">
+            <!-- Baguette Diamonds -->
+            <li class=" text-uppercase me-4">
+              <a href="#">Baguette Diamonds </a>
+            </li>
+            <div class="galleryContainer row  container-fluid mx-0 bg-light py-5">
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Necklaces.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Necklaces</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Earrings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Earrings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Bracelets.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Bracelets</h3>
+              </a>
+            </div>
+
+            <!-- bottom Links -->
+
+            <li class=" text-uppercase me-4">
+              <a href="#">Diamond Rings
+              </a>
+            </li>
+            <div class="galleryContainer row  container-fluid mx-0 bg-light py-5">
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+
+            </div>
+
+
+
+            <li class=" text-uppercase me-4">
+              <a href="#">Diamond Necklaces
+              </a>
+            </li>
+            <div class="galleryContainer row  container-fluid mx-0 bg-light py-5">
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Necklaces.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Necklaces.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Necklaces.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Necklaces.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Necklaces.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+
+
+            </div>
+
+            <!-- bottom Links -->
+            <li class=" text-uppercase me-4">
+              <a href="#">Diamond Earrings
+              </a>
+            </li>
+            <div class="galleryContainer row  container-fluid mx-0 bg-light py-5">
+
+              <a href="baguetteDiamondEarrings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Earrings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Earrings</h3>
+              </a>
+              <a href="baguetteDiamondEarrings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Earrings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Earrings</h3>
+              </a>
+              <a href="baguetteDiamondEarrings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Earrings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Earrings</h3>
+              </a>
+              <a href="baguetteDiamondEarrings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Earrings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Earrings</h3>
+              </a>
+            </div>
+
+
+            <!-- bottom Links -->
+            <li class=" text-uppercase me-4">
+              <a href="#">Diamond Bracelets
+              </a>
+            </li>
+            <div class="galleryContainer row  container-fluid mx-0 bg-light py-5">
+
+
+              <a href="baguetteDiamondBracelets.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Bracelets.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Bracelets</h3>
+              </a>
+              <a href="baguetteDiamondBracelets.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Bracelets.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Bracelets</h3>
+              </a>
+              <a href="baguetteDiamondBracelets.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Bracelets.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Bracelets</h3>
+              </a>
+              <a href="baguetteDiamondBracelets.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Bracelets.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Bracelets</h3>
+              </a>
+              <a href="baguetteDiamondBracelets.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Bracelets.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Bracelets</h3>
+              </a>
+              <a href="baguetteDiamondBracelets.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Bracelets.png" alt="" class="mb-3"
+                  style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Bracelets</h3>
+              </a>
+            </div>
+
+            <!-- bottom Links -->
+            <li class=" text-uppercase me-4">
+              <a href="#">Wedding Bands
+              </a>
+            </li>
+            <div class="galleryContainer row  container-fluid mx-0 bg-light py-5">
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+
+            </div>
+
+
+            <li class=" text-uppercase me-4">
+              <a href="#">sets
+              </a>
+            </li>
+            <div class="galleryContainer row  container-fluid mx-0 bg-light py-5">
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+              <a href="baguetteDiamondRings.html"
+                class="col-md-3 d-flex flex-direction-column justify-content-center align-items-center my-3">
+                <img src="images/Baguette-Diamond-Rings.png" alt="" class="mb-3" style="width: 150px; height: auto;">
+                <h3 class="fs-5">Baguette Diamond Rings</h3>
+              </a>
+
+            </div>
+
+          </ul>
+
+
+
+        </div>
       </header>
+
+
+      <!--* Campaign Box -->
+      <div class=" container-fluid  d-flex justify-content-between flex-nowrap  px-3 mb-5"
+        style="height: 370px; background: #090c2c; ">
+        <!-- ringed picture -->
+        <div class="ringedPicture  d-flex align-items-center justify-content-center">
+        </div>
+        <!-- discount notice  -->
+        <div class="discountNoticeBox text-center py-5 ">
+          <h2 class="discountNotice mb-5 ">Lorem ipsum <span class="text-light ">%50</span> sit amet consectetur.
+          </h2>
+          <button class="discountNoticeButton btn btn-light p-2 text-uppercase text-dark fs-md-5 fs-lg-3 mt-3">Start
+            shopping</button>
+        </div>
+        <!-- rings img -->
+        <div class="rings d-flex align-items-center justify-content-center ">
+          <img src="images/rings.png" alt="">
+        </div>
+      </div>
+
+
+      <!--* fgjgfjgjnbjgbjgb -->
+
+      <div class="container-fluid d-flex justify-content-center p-3 my-5" style="margin: 110px 0 !important;">
+        <div class="row container-md  ">
+
+          <div class="col-sm-2  text-center "><img src="images/secure-shopping.png" alt="" style="width: 50px;">
+            <p>Secure shopping</p>
+          </div>
+          <div class="col-sm-2   text-center "><img src="images/shipping.png" alt="" style="width: 50px;">
+            <p>Fast and reliable shipping </p>
+          </div>
+          <div class="col-sm-2  text-center "><img src="images/warranty.png" alt="" style="width: 50px;">
+            <p>Warranty </p>
+          </div>
+          <div class="col-sm-2 text-center "><img src="images/measurement-exchange.png" alt="" style="width: 50px;">
+            <p>Measurement exchange</p>
+          </div>
+          <div class="col-sm-2   text-center "><img src="images/special-packaging.png" alt="" style="width: 55px;">
+            <p>Special packaging</p>
+          </div>
+          <div class="col-sm-2  text-center "><img src="images/free-returns.png" alt="" style="width: 35px;">
+            <p>Free returns </p>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- buraya şey gelicek filtre ve sırala-->
+      <div class="div container-lg mt-5 pe-5 mb-5 d-flex justify-content-end ">
+        <i class="filterIcon fas fa-filter text-dark me-4 fs-4 ">
+        </i>
+        <div class="filter p-2 rounded">
+          <div class="filtername p-2 text-light text-lowercase">Baguette Diamonds</div>
+          <div class="filtername p-2 text-light text-lowercase">Diamond Rings</div>
+          <div class="filtername p-2 text-light text-lowercase">Diamond Necklaces</div>
+          <div class="filtername p-2 text-light text-lowercase">Diamond Earrings</div>
+          <div class="filtername p-2 text-light text-lowercase">Diamond Bracelets</div>
+          <div class="filtername p-2 text-light text-lowercase">Wedding Bands</div>
+          <div class="filtername p-2 text-light text-lowercase">Sets</div>
+          <div class="filtername p-2 text-light text-lowercase">Best Selling</div>
+          <div class="filtername p-2 text-light text-lowercase">express shipping</div>
+          <div class="filtername p-2 text-light text-lowercase">special price</div>
+          <div class="filtername p-2 text-light text-lowercase">exclusive</div>
+        </div>
+        <i class="sortingIcon fa-solid fa-arrows-up-down text-dark fs-4"></i>
+        <div class="sorting p-2 rounded">
+          <div class="sortingname p-2 text-light text-lowercase">Sort by price</div>
+          <div class="sortingname p-2 text-light text-lowercase">Sort alphabetically A to Z</div>
+          <div class="sortingname p-2 text-light text-lowercase"> Sort alphabetically Z to A</div>
+          <div class="sortingname p-2 text-light text-lowercase">Sort by carat</div>
+        </div>
+      </div>
+      <!-- buraya şey gelicek ürünler -->
+      <div id="products" class="container-xl mt-5  px-3 py-4 d-flex justify-content-center flex-wrap  ">
+        <div class="row  ">
+          <div class=" col-xl-4 col-md-6  mb-5  ">
+            <div class="card text-center border-0">
+              <div class="container-fluid position-absolute d-flex justify-content-between">
+                <div>
+                  <p class="productCode p-2">Product Code: 16345689</p>
+                </div>
+                <div class="mt-2">
+                  <div class="bg-light rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">Best
+                    Selling</div>
+                  <div class="bg-light    rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">express
+                    shipping</div>
+                  <div class="bg-light  rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">special
+                    price</div>
+                  <div class="bg-light rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    exclusive</div>
+                </div>
+              </div>
+              <img src="images/ring.jpg" class="card-img-top mx-auto " alt="" style="width: 100%;">
+              <div class="card-body ">
+                <h3 class="card-title mb-2">0.30 Ct. Diamond Earrings</h3>
+                <div class="money d-flex justify-content-between align-items-center mt-5 mb-4 ">
+                  <div class="indirim rounded-circle text-dark p-2 w-25 h-25 ">%50<div> discount</div>
+                  </div>
+                  <div class="para fs-3"><span class="pe-3 fs-5"
+                      style="text-decoration: line-through; color: #969696;">$300</span>$250</div>
+                </div>
+                <a href="productpage.html"
+                  class="ürünbutonu btn  container-fluid text-light my-4 text-capitalize">review
+                </a>
+                <p class="taksit " style="color: #424242;">4x1200 taksit fırsatıyla</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-xl-4 col-md-6  mb-5  ">
+            <div class="card text-center border-0">
+              <div class="container-fluid position-absolute d-flex justify-content-between">
+                <div>
+                  <p class="productCode p-2">Product Code: 13342689</p>
+                </div>
+                <div class="mt-2">
+                  <div class="bg-light rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">Best
+                    Selling</div>
+                  <div class="bg-light    rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">express
+                    shipping</div>
+                </div>
+              </div>
+              <img src="images/necklace.jpg" class="card-img-top mx-auto " alt="" style="width: 100%;">
+              <div class="card-body ">
+                <h3 class="card-title mb-2">0.15 Ct. Diamond Necklace</h3>
+                <div class="money d-flex justify-content-between align-items-center mt-5 mb-4 ">
+                  <div class="indirim rounded-circle text-dark p-2 w-25 h-25 ">%50<div>discount</div>
+                  </div>
+                  <div class="para fs-3"><span class="pe-3 fs-5"
+                      style="text-decoration: line-through; color: #969696;">$150</span>$110</div>
+                </div>
+                <a href="productpage.html"
+                  class="ürünbutonu btn  container-fluid text-light my-4 text-capitalize">review
+                </a>
+                <p class="taksit " style="color: #424242;">4x1200 taksit fırsatıyla</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-xl-4 col-md-6  mb-5  ">
+            <div class="card text-center border-0">
+              <div class="container-fluid position-absolute d-flex justify-content-between">
+                <div>
+                  <p class="productCode p-2">Product Code: 11232369</p>
+                </div>
+                <div class="mt-2">
+                  <div class="bg-light rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">Best
+                    Selling</div>
+                </div>
+              </div>
+              <img src="images/earrings.jpg" class="card-img-top mx-auto " alt="" style="width: 100%;">
+              <div class="card-body ">
+                <h3 class="card-title mb-2">0.30 Ct. Diamond Earrings</h3>
+                <div class="money d-flex justify-content-between align-items-center mt-5 mb-4 ">
+                  <div class="indirim rounded-circle text-dark p-2 w-25 h-25 ">%50<div>discount</div>
+                  </div>
+                  <div class="para fs-3"><span class="pe-3 fs-5"
+                      style="text-decoration: line-through; color: #969696;">$550</span>$500</div>
+                </div>
+                <a href="productpage.html"
+                  class="ürünbutonu btn  container-fluid text-light my-4 text-capitalize">review
+                </a>
+                <p class="taksit " style="color: #424242;">4x1200 taksit fırsatıyla</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-xl-4 col-md-6  mb-5  ">
+            <div class="card text-center border-0">
+              <div class="container-fluid position-absolute d-flex justify-content-between">
+                <div>
+                  <p class="productCode p-2">Product Code: 365236984</p>
+                </div>
+                <div class="mt-2">
+                  <div class="bg-light  rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">special
+                    price</div>
+                  <div class="bg-light rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    exclusive</div>
+                </div>
+              </div>
+              <img src="images/Baguette.2jpg.jpg" class="card-img-top mx-auto " alt="" style="width: 100%;">
+              <div class="card-body ">
+                <h3 class="card-title mb-2">0.74 Ct. Diamond ring</h3>
+                <div class="money d-flex justify-content-between align-items-center mt-5 mb-4 ">
+                  <div class="indirim rounded-circle text-dark p-2 w-25 h-25 ">%50<div>indirim</div>
+                  </div>
+                  <div class="para fs-3"><span class="pe-3 fs-5"
+                      style="text-decoration: line-through; color: #969696;">$420</span>$400</div>
+                </div>
+                <a href="#"
+                  class="ürünbutonu btn  container-fluid text-light my-4 text-capitalize">review
+                </a>
+                <p class="taksit " style="color: #424242;">4x1200 taksit fırsatıyla</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-xl-4 col-md-6  mb-5  ">
+            <div class="card text-center border-0">
+              <div class="container-fluid position-absolute d-flex justify-content-between">
+                <div>
+                  <p class="productCode p-2">Product Code: 12343689</p>
+                </div>
+                <div class="mt-2">
+                  <div class="bg-light rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">Best
+                    Selling</div>
+                  <div class="bg-light rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    exclusive</div>
+                </div>
+              </div>
+              <img src="images/necklace1.jpg" class="card-img-top mx-auto " alt="" style="width: 100%;">
+              <div class="card-body ">
+                <h3 class="card-title mb-2">0.10 Ct. Diamond Solitaire Necklace</h3>
+                <div class="money d-flex justify-content-between align-items-center mt-5 mb-4 ">
+                  <div class="indirim rounded-circle text-dark p-2 w-25 h-25 ">%50<div>discount</div>
+                  </div>
+                  <div class="para fs-3"><span class="pe-3 fs-5"
+                      style="text-decoration: line-through; color: #969696;">$310</span>$295</div>
+                </div>
+                <a href="#"
+                  class="ürünbutonu btn  container-fluid text-light my-4 text-capitalize">review
+                </a>
+                <p class="taksit " style="color: #424242;">4x1200 taksit fırsatıyla</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-xl-4 col-md-6  mb-5  ">
+            <div class="card text-center border-0">
+              <div class="container-fluid position-absolute d-flex justify-content-between">
+                <div>
+                  <p class="productCode p-2">Product Code:16349683</p>
+                </div>
+                <div class="mt-2">
+                  <div class="bg-light rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">Best
+                    Selling</div>
+                  <div class="bg-light  rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">special
+                    price</div>
+                  <div class="bg-light rounded-1 mb-1 text-capitalize"
+                    style="width: 75px; font-size: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    exclusive</div>
+                </div>
+              </div>
+              <img src="images/Baguette.jpg" class="card-img-top mx-auto " alt="" style="width: 100%;">
+              <div class="card-body ">
+                <h3 class="card-title mb-2">0.14 Ct. Diamond Baguette Ring</h3>
+                <div class="money d-flex justify-content-between align-items-center mt-5 mb-4 ">
+                  <div class="indirim rounded-circle text-dark p-2 w-25 h-25 ">%50<div>discount</div>
+                  </div>
+                  <div class="para fs-3"><span class="pe-3 fs-5"
+                      style="text-decoration: line-through; color: #969696;">$430</span>$410</div>
+                </div>
+                <a href="#"
+                  class="ürünbutonu btn  container-fluid text-light my-4 text-capitalize">review
+                </a>
+                <p class="taksit " style="color: #424242;">4x1200 taksit fırsatıyla</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="container-xxl   d-flex justify-content-center align-items-center ">
+        <a href="#">more products</a>
+      </div>
+
+      <!-- burası indirim çek kart vs olsun sol ve sağ kartlar tamuk olsun slide olsun slide bastıkça kart düzleşsin -->
+      <div class="marqueedivs mt-5">
+        <div class="marqueeDivv marqueeDivv1 row container-fluid  mx-0">
+          <div class="col-2  d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+          <div class="col-2  d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+          <div class="col-2 d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+          <div class="col-2  d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+          <div class="col-2 d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+          <div class="col-2  d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="marqueeDiv container-fluid d-flex align-items-center ">
+          <marquee behavior="scroll" direction="left" scrolldelay="1">Do not miss out on discounts up to %50 on special
+            products for the New Year season </marquee>
+
+        </div>
+        <div class="marqueeDivv marqueeDivv2 row container-fluid mx-0  ">
+          <div class="col-2  d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+          <div class="col-2  d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+          <div class="col-2 d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+          <div class="col-2  d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+          <div class="col-2 d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+          <div class="col-2  d-flex justify-content-center align-items-center">
+            <div class="kare d-flex justify-content-center align-items-center">
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- kfdmvkkmfdvf -->
+      <div class="uzundiv  container-fluid d-flex align-items-center justify-content-between px-5 flex-wrap">
+        <div class="box-1 text-center ms-3">
+          <p class="text-light mb-4"> bu yıl seni hangi 3 şey bekliyor
+            görmek için tıkla
+          </p>
+          <button class="tikla btn btn-light mx-auto">tıkla</button>
+        </div>
+        <div class="box2 d-flex justify-content-between">
+          <div class="divv div1 d-flex align-items-center justify-content-center">
+            <!-- aşk seyehat para başarı  -->
+            <img class="bracelets" src="images/Baguette-Diamond-Bracelets.png" alt="">
+            <img class="ring" src="images/Baguette-Diamond-Rings.png" alt="">-
+            <img class="earring" src="images/Baguette-Diamond-Earrings.png" alt="">
+            <img class="necklace" src="images/Baguette-Diamond-Necklaces.png" alt="">
+          </div>
+          <div class="divv div2 d-flex align-items-center justify-content-center">
+            <!-- aşk seyehat para başarı  -->
+            <img class="bracelets" src="images/Baguette-Diamond-Bracelets.png" alt="">
+            <img class="ring" src="images/Baguette-Diamond-Rings.png" alt="">-
+            <img class="earring" src="images/Baguette-Diamond-Earrings.png" alt="">
+            <img class="necklace" src="images/Baguette-Diamond-Necklaces.png" alt="">
+          </div>
+          <div class="divv div3 d-flex align-items-center justify-content-center">
+            <!-- aşk seyehat para başarı  -->
+            <img class="bracelets" src="images/Baguette-Diamond-Bracelets.png" alt="">
+            <img class="ring" src="images/Baguette-Diamond-Rings.png" alt="">-
+            <img class="earring" src="images/Baguette-Diamond-Earrings.png" alt="">
+            <img class="necklace" src="images/Baguette-Diamond-Necklaces.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- kfdmvkkmfdvf -->
+
+
+      <div class="puzzleDiv container-fluid d-flex flex-wrap justify-content-between align-items-center px-5">
+        <div class="puzzle puzzle1 mx-auto mt-5 ">
+          <div class="row ">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+
+        <div class="puzzle puzzle2 mx-auto mt-5 ">
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+        <div class="puzzle puzzle3 mx-auto mt-5 ">
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+        <div class="puzzle puzzle4 mx-auto mt-5 ">
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+      <!-- footer kısmı -->
+      <footer class="container-fluid bg-light mt-5 p-3 d-flex align-items-end flex-wrap  ">
+
+        <div class="takipetebülten container-fluid d-flex justify-content-between">
+
+          <div class="takipet">
+            bizi takip et
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="ebülten">
+            e bülten
+            <input type="text">
+            <input type="email">
+            <input type="submit">
+          </div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <div class="basliks row container-fluid mt-2 mt-xl-5 ">
+          <div class="col-sm-3 my-2">
+            <h5>Lorem, ipsum.</h5>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum. Lorem, ipsum. </a>
+            <a href="#" class="d-block mb-2">Lorem, </a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+          </div>
+          <div class="col-sm-3 mb-5">
+            <h5>Lorem, ipsum.</h5>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+          </div>
+          <div class="col-sm-3 mb-5">
+            <h5>Lorem, ipsum.</h5>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+          </div>
+          <div class="col-sm-3 mb-5">
+            <h5>Lorem, ipsum.</h5>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+            <a href="#" class="d-block mb-2">Lorem, ipsum.</a>
+          </div>
+
+
+
+        </div>
+
+
+
+
+        <img src="images/card_logos3.webp" alt="" class="container-lg mb-5">
+
+      </footer>
+
+
 
     </div>
   </div>
-  <script src="app.js">  </script>
+
+
+
+  <script src="app.js"></script>
 
   <!--* bootstrap link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
