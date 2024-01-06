@@ -1258,7 +1258,93 @@ font-family: 'Playfair Display', serif; */
     text-shadow: rgba(255, 255, 255, 0.514) 0px 5px 15px;
 }
 
+@media screen and (max-width:1080px) {
 
+    .kare {
+
+        width: 130px !important;
+        ;
+        height: 130px !important;
+    }
+
+}
+
+@media screen and (max-width:953px) {
+
+    .kare {
+
+        width: 110px !important;
+        ;
+        height: 110px !important;
+    }
+
+}
+
+@media screen and (max-width:827px) {
+
+    .kare {
+
+        width: 90px !important;
+        ;
+        height: 90px !important;
+    }
+
+}
+
+@media screen and (max-width:708px) {
+
+    .kare {
+
+        width: 80px !important;
+        ;
+        height: 80px !important;
+    }
+
+}
+
+@media screen and (max-width:653px) {
+
+    .kare {
+
+        width: 70px !important;
+        ;
+        height: 70px !important;
+    }
+
+}
+
+@media screen and (max-width:594px) {
+
+    .kare {
+
+        width: 55px !important;
+        ;
+        height: 55px !important;
+    }
+
+}
+
+@media screen and (max-width:502px) {
+
+    .kare {
+
+        width: 40px !important;
+        ;
+        height: 40px !important;
+    }
+
+}
+
+@media screen and (max-width:421px) {
+
+    .kare {
+
+        width: 30px !important;
+        ;
+        height: 30px !important;
+    }
+
+}
 
 .soruCevapDiv {
     background-color: black;
@@ -1417,15 +1503,8 @@ font-family: 'Playfair Display', serif; */
         width: 150px !important;
     }
 
-    .products .row {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .card {
-        width: 400px;
-
+    .card-body {
+        margin: 0 50px;
     }
 }
 
@@ -1518,15 +1597,17 @@ font-family: 'Playfair Display', serif; */
     }
 
     .card {
-        width: 100%;
-
-    }
-
-   .products img {
         width: 100% !important;
-        height: auto;
+
     }
 
+    .card-body {
+        margin: 0 0px;
+    }
+
+    .products img {
+        width: 100% !important;
+    }
 }
 
 
@@ -1555,6 +1636,9 @@ font-family: 'Playfair Display', serif; */
         height: 390px !important;
     }
 
+    .card {
+        width: 370px !important;
+    }
 }
 
 @media screen and (max-width:375px) {
