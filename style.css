@@ -6,6 +6,29 @@
 
 }
 
+body {
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #0c0f38;
+    --sb-size: 13px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 7px;
+
+}
+
 :root {
     --darkBlue: #0C0F38;
 }
@@ -418,7 +441,13 @@ span:nth-child(odd) {
     right: 10px;
     width: 50px;
     height: 50px;
+    background: var(--darkBlue);
+    transition: background .5s;
+}
 
+.up:hover {
+
+    background: #7f77a3;
 }
 
 /** header */
@@ -523,6 +552,7 @@ li {
     width: 200px;
     height: 24px;
 }
+
 .common {
     position: relative;
 }
@@ -557,6 +587,7 @@ input:focus+label {
 .login {
     backface-visibility: hidden;
 }
+
 /* forgot password  */
 .forgotPassword {
     font-size: 12px;
@@ -570,6 +601,7 @@ input:focus+label {
     color: #a88585 !important;
     border-bottom: 0.5px solid #a88585;
 }
+
 /* login with google  */
 .login .loginWithGoogle {
     width: 100%;
@@ -603,6 +635,7 @@ input:focus+label {
     margin-bottom: 4px;
     font-size: 12px;
 }
+
 /* account Message  */
 .accountMessage,
 .signupLink {
@@ -621,6 +654,7 @@ input:focus+label {
 .accountMessage span:hover {
     font-size: 18px;
 }
+
 /* signup section */
 .signup {
     background-color: #ffffff !important;
@@ -660,14 +694,17 @@ input:focus+label {
     width: 100%;
 }
 
-.loginAndSignupBox .btn,.shoppingBox .btn{
+.loginAndSignupBox .btn,
+.shoppingBox .btn {
     background: linear-gradient(135deg, black, var(--darkBlue)) !important;
     width: 200px;
     height: 40px;
     transition: background .8s linear;
 
 }
-.loginAndSignupBox .btn,.shoppingBox .btn {
+
+.loginAndSignupBox .btn,
+.shoppingBox .btn {
     background: linear-gradient(195deg, rgb(21, 21, 21), var(--darkBlue)) !important;
 }
 
@@ -683,9 +720,10 @@ input:focus+label {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: none;
 }
-.shoppingBox .noProductBox{
-  background: rgb(231, 234, 250) !important;  
- 
+
+.shoppingBox .noProductBox {
+    background: rgb(231, 234, 250) !important;
+
 }
 
 .optionsBox {
@@ -872,15 +910,15 @@ input:focus+label {
 
 }
 
+.card {
+    transition: box-shadow .3s linear;
+
+}
+
 .card:hover .productCode {
     display: inline-block;
 }
 
-.card {
-
-    transition: box-shadow .3s linear;
-
-}
 
 .card:hover {
     box-shadow: rgba(137, 137, 179, 0.89) 0px 5px 15px;
@@ -892,7 +930,14 @@ input:focus+label {
 
 .card img {
     width: 90px;
+    height: auto;
+}
 
+@media screen and (max-width:1200px) {
+    .card img {
+        width: 370px !important;
+        height: auto;
+    }
 }
 
 .card .btn:hover {
@@ -925,6 +970,7 @@ input:focus+label {
 
 
 }
+
 
 
 
@@ -1298,17 +1344,20 @@ font-family: 'Playfair Display', serif; */
     }
 
 }
+
 @media screen and (max-width:990px) {
-    .shoppingBox h4{
-font-size: 22px;
+    .shoppingBox h4 {
+        font-size: 22px;
     }
-    .shoppingBox p{
-font-size: 15px;
+
+    .shoppingBox p {
+        font-size: 15px;
 
     }
-  .loginAndSignupBox{
-    right:110px;
-  }
+
+    .loginAndSignupBox {
+        right: 110px;
+    }
 
 }
 
@@ -1367,6 +1416,17 @@ font-size: 15px;
     .rings img {
         width: 150px !important;
     }
+
+    .products .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 400px;
+
+    }
 }
 
 
@@ -1393,11 +1453,12 @@ font-size: 15px;
     .topLinks ul {
         display: none !important;
     }
-.loginAndSignupBox{
-    width: 270px;
-    height: 410px;
-    padding: 30px;
-}
+
+    .loginAndSignupBox {
+        width: 270px;
+        height: 410px;
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width:570px) {
@@ -1409,12 +1470,12 @@ font-size: 15px;
 
 @media screen and (max-width:558px) {
 
-   
-.box2 div {
-    width: 120px !important;
-    height: 220px !important;
 
-} 
+    .box2 div {
+        width: 120px !important;
+        height: 220px !important;
+
+    }
 }
 
 
@@ -1430,21 +1491,21 @@ font-size: 15px;
 
 @media screen and (max-width:474px) {
 
-   
+
     .box2 div {
         width: 100px !important;
         height: 200px !important;
-    
-    } 
-    
-    .box2 .divv img{
-      
-        width:70px !important;
-        height: auto;
-       
+
     }
-    
-}    
+
+    .box2 .divv img {
+
+        width: 70px !important;
+        height: auto;
+
+    }
+
+}
 
 @media screen and (max-width:425px) {
     .navbar-toggler {
@@ -1456,34 +1517,46 @@ font-size: 15px;
 
     }
 
+    .card {
+        width: 100%;
+
+    }
+
+   .products img {
+        width: 100% !important;
+        height: auto;
+    }
+
 }
 
 
 @media screen and (max-width:406px) {
 
-   
+
     .box2 div {
         width: 80px !important;
         height: 140px !important;
-    
-    } 
-    
-    .box2 .divv img{
-      
-        width:50px !important;
+
+    }
+
+    .box2 .divv img {
+
+        width: 50px !important;
         height: auto;
-       
+
     }
-    
-}   
-@media screen and (max-width:387px) {
-    .loginAndSignupBox{
-       right: 75px;
-       width: 250px !important;
-       height: 390px !important;
-    }
-   
+
 }
+
+@media screen and (max-width:387px) {
+    .loginAndSignupBox {
+        right: 75px;
+        width: 250px !important;
+        height: 390px !important;
+    }
+
+}
+
 @media screen and (max-width:375px) {
 
     .fa-search {
@@ -1511,15 +1584,17 @@ font-size: 15px;
     backdrop-filter: blur(15px);
 }
 
-.box2 .divv{
+.box2 .divv {
     position: relative;
 }
-.box2 .divv img{
+
+.box2 .divv img {
     position: absolute;
     width: 90px;
     height: auto;
     display: none;
 }
-.block{
+
+.block {
     display: block !important;
 }
