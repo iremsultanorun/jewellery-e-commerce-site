@@ -50,60 +50,6 @@ discoverButton.addEventListener('click', () => {
 
 //! E-commerce  Page 
 
-
-// const slidesCard = document.querySelectorAll('.reklamkarti');
-// let rightChevron = document.querySelector(".rightChevron");
-// let leftChevron = document.querySelector(".leftChevron");
-
-// let nextSlideAdvertisingCards = () => {
-//   const activeSlideCard = document.querySelector('.activee');
-//   activeSlideCard.classList.remove('activee');
-//   if (activeSlideCard.nextElementSibling) {
-//     activeSlideCard.nextElementSibling.classList.add('activee');
-//   } else {
-//     slidesCard[0].classList.add('activee');
-//   }
-// };
-
-// let prevSlideAdvertisingCards = () => {
-//   const activeSlideCard = document.querySelector('.activee');
-//   activeSlideCard.classList.remove('activee');
-//   if (activeSlideCard.previousElementSibling) {
-//     activeSlideCard.previousElementSibling.classList.add('activee');
-
-
-//   } else {
-//     slidesCard[slidesCard.length - 1].classList.add('activee');
-//   }
-// };
-
-// rightChevron.addEventListener('click', () => {
-//   nextSlideAdvertisingCards();
-// });
-
-// leftChevron.addEventListener('click', () => {
-//   prevSlideAdvertisingCards();
-// });
-
-// let soruicon = document.querySelectorAll(".fa-angle-down");
-// let carddbottom = document.querySelectorAll(".carddbottom");
-
-// soruicon.forEach((icon, index) => {
-//   icon.addEventListener('click', () => {
-//     // Tıklanan ikona ait carddbottom öğesini bul
-//     let clickedCarddbottom = carddbottom[index];
-
-//     // carddbottom'ın mevcut durumunu kontrol et ve tersine çevir
-//     if (clickedCarddbottom.style.display === 'block') {
-//       clickedCarddbottom.style.display = 'none';
-//     } else {
-//       clickedCarddbottom.style.display = 'block';
-//     }
-//   });
-// });
-
-
-
 let userIcons = document.querySelectorAll('.userIcon');
 let loginBoxes = document.querySelectorAll('.loginBox');
 let shoppingBags = document.querySelectorAll('.shoppingBag');
@@ -135,14 +81,14 @@ tikla.addEventListener('click', () => {
     imgs1.forEach(img => {
       img.classList.remove('block');
     });
-      let randomIndex1 = Math.floor(Math.random() * imgs1.length);
-      let selectedImage1 = imgs1[randomIndex1];
-      selectedImage1.classList.add('block');
-      let selectedImageClass1 = selectedImage1.className;
-      console.log(selectedImageClass1);
+    let randomIndex1 = Math.floor(Math.random() * imgs1.length);
+    let selectedImage1 = imgs1[randomIndex1];
+    selectedImage1.classList.add('block');
+    let selectedImageClass1 = selectedImage1.className;
+    console.log(selectedImageClass1);
 
 
-   
+
     imgs2.forEach(img => {
       img.classList.remove('block');
     });
@@ -161,7 +107,7 @@ tikla.addEventListener('click', () => {
     let selectedImageClass3 = selectedImage3.className;
     console.log(selectedImageClass3)
 
- checkLuck(selectedImageClass1, selectedImageClass2, selectedImageClass3);
+    checkLuck(selectedImageClass1, selectedImageClass2, selectedImageClass3);
   }, 2000);
   setTimeout(function () {
     clearInterval(dur);
@@ -172,16 +118,13 @@ tikla.addEventListener('click', () => {
 
 function checkLuck(class1, class2, class3) {
   if (class1 === class2 && class2 === class3) {
-    // console.log('100% şanslısın!');
-    tikla.textContent='100% şanslısın!';
+    tikla.textContent = 'Oh, you will be so lucky :)';
   } else if (class1 === class2 || class1 === class3 || class2 === class3) {
-    // console.log('%50 şanslısın!');
-      tikla.textContent='%50 şanslısın!';
+    tikla.textContent = 'You will be medium lucky';
   } else {
-    // console.log('Şanssız geçtin :(');
-       tikla.textContent='Şanssız geçtin :(';
+    tikla.textContent = 'Oh, looks like its going to be a bit unlucky :('
   }
-}
+};
 
 
 
@@ -268,3 +211,11 @@ shoppingBags.forEach(shoppingBag => {
 });
 
 
+
+document.querySelector('.socialMediaButton').addEventListener('click',  () =>{
+  document.querySelectorAll('.fa-brands').forEach((icon, index) => {
+      setTimeout(() => {
+          icon.style.opacity = '1';
+      }, index * 200);
+  });
+});
